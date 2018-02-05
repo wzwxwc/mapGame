@@ -28,9 +28,12 @@ require(["lib/util/BaseMapUtil", "lib/weapon/Missle", "leaflet"], function (base
     map.setView([37.30027528134433, -259.27734375000006], 4);
 
     var missle = new L.Missle({
-        subType: "missle2"
+        subType: "missle3"
     });
-    missle.showOnMap(map);
+    missle.showOnMap({
+        map: map,
+        latLng: [37.30027528134433, -259.27734375000006]
+    });
 
 });
 
